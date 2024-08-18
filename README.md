@@ -1,62 +1,69 @@
+
 # World Currency Exchange
 
 ## Description
 
-World Currency Exchange is a web application designed to provide instant and accurate currency conversions globally. This project leverages the CurrencyLayer API for real-time exchange rates and the Open Exchange Rates API for fetching available currency codes. The application is built using a Node.js backend with Express and a React.js frontend.
+**World Currency Exchange** is a web application designed to provide instant and accurate currency conversions globally. This project leverages the CurrencyLayer API for real-time exchange rates and the Open Exchange Rates API for fetching available currency codes. The application is built using a Node.js backend with Express and a React.js frontend.
 
 ## Features
 
-- Real-Time Currency Conversion: Convert between various currencies using up-to-date exchange rates.
-- User-Friendly Interface: Simple and intuitive UI for selecting currencies and entering amounts.
-- Rate Limiting: Implemented rate limiting to prevent abuse and ensure fair usage.
-- CORS Support: Configured CORS to allow requests from the frontend.
-- Error Handling: Comprehensive error handling to manage API errors and network issues.
+- **Real-Time Currency Conversion**: Convert between various currencies using up-to-date exchange rates.
+- **User-Friendly Interface**: Simple and intuitive UI for selecting currencies and entering amounts.
+- **Rate Limiting**: Implemented rate limiting to prevent abuse and ensure fair usage.
+- **CORS Support**: Configured CORS to allow requests from the frontend.
+- **Error Handling**: Comprehensive error handling to manage API errors and network issues.
 
 ## Technologies Used
 
-- Backend: Node.js, Express, Axios, dotenv, express-rate-limit, CORS
-- Frontend: React.js, Axios
-- APIs: CurrencyLayer API, Open Exchange Rates API
+- **Backend**: Node.js, Express, Axios, dotenv, express-rate-limit, CORS
+- **Frontend**: React.js, Axios
+- **APIs**: CurrencyLayer API, Open Exchange Rates API
 
 ## Setup Instructions
 
 ### Backend Setup
 
-1. Clone the repository:
+1. **Clone the repository**:
+   ```bash
    git clone https://github.com/your-username/world-currency-exchange.git
    cd world-currency-exchange
-  
+   ```
 
-2. Navigate to the `backend` directory:   
+2. **Navigate to the `backend` directory**:
+   ```bash
    cd backend
+   ```
 
-
-3. Install dependencies:
+3. **Install dependencies**:
+   ```bash
    npm install
-   
+   ```
 
-4. Create a `.env` file and add your CurrencyLayer API key:
+4. **Create a `.env` file** and add your CurrencyLayer API key:
    ```plaintext
    CURRENCY_LAYER_API_KEY=your_currency_layer_api_key
    PORT=5000
    ```
 
-5. Start the backend server:
+5. **Start the backend server**:
+   ```bash
    npm start
-   
+   ```
 
 ### Frontend Setup
 
-1. Navigate to the `frontend` directory:
+1. **Navigate to the `frontend` directory**:
    ```bash
    cd frontend
    ```
 
-2. Install dependencies:
+2. **Install dependencies**:
+   ```bash
    npm install
+   ```
 
-
-3. Update the API key in `App.js` for Open Exchange Rates:
+3. **Update the API key in `App.js` for Open Exchange Rates**:
+   ```javascript
    const response = await axios.get(
      "https://openexchangerates.org/api/currencies.json",
      {
@@ -65,11 +72,12 @@ World Currency Exchange is a web application designed to provide instant and acc
        },
      }
    );
-   
+   ```
 
-4. Start the frontend application:
-   npm run dev
-  
+4. **Start the frontend application**:
+   ```bash
+   npm start
+   ```
 
 ## Usage
 
